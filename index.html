@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevoke Motors Siliguri | Authorized Maruti Suzuki Dealership | Arena & Nexa Cars</title>
+    <meta name="description" content="Sevoke Motors - Leading Maruti Suzuki dealership in Siliguri. Arena & Nexa cars, commercial vehicles, True Value pre-owned cars. Book test drive today!">
+    <meta name="keywords" content="Maruti Suzuki Siliguri, car dealership Siliguri, Sevoke Motors, Nexa cars, Arena cars, car service Siliguri">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTIwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNOCAyMEM4IDEyIDEyIDggMjAgOGg4MEM5MiA4IDk2IDEyIDk2IDIwUzkyIDMyIDg0IDMySDIwQzEyIDMyIDggMjggOCAyMFoiIGZpbGw9IiMwMDcxQkMiLz4KPHR5cGUgdGV4dD0iU2V2b2tlIE1vdG9ycyIgZmlsbD0iI0ZGRiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiBkeD0iMjAiIGR5PSIyNSIvPgo8L3N2Zz4K" alt="Sevoke Motors">
+                    <span class="nav-title">Sevoke Motors</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link">New Cars <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#arena">Arena Cars</a>
+                            <a href="#nexa">Nexa Cars</a>
+                            <a href="#commercial">Commercial Vehicles</a>
+                        </div>
+                    </li>
+                    <li><a href="#preowned" class="nav-link">Pre-Owned</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#finance" class="nav-link">Finance</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="tel:+913532505000" class="nav-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>Call Now</span>
+                    </a>
+                    <button class="btn-primary" onclick="openTestDriveModal()">Book Test Drive</button>
+                    <button class="nav-toggle" id="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Drive Your Dreams with <span class="text-primary">Sevoke Motors</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Siliguri's trusted Maruti Suzuki dealership. Explore Arena & Nexa cars, commercial vehicles, and pre-owned cars with unmatched service excellence.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Years of Trust</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10,000+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Car Models</div>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn-primary btn-large" onclick="openTestDriveModal()">
+                            <i class="fas fa-car"></i>
+                            Book Test Drive
+                        </button>
+                        <a href="#cars" class="btn-secondary btn-large">
+                            <i class="fas fa-eye"></i>
+                            View Cars
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDYwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRjVGNUY1Ii8+CjxwYXRoIGQ9Ik0xMDAgMzAwQzEwMCAyODAgMTIwIDI2MCA0MCAyNjBINTYwQzU4MCAyNjAgNjAwIDI4MCA2MDAgMzAwVjM0MEg0MDBMMzgwIDM2MEgyMjBMMjAwIDM0MEgxMDBWMzAwWiIgZmlsbD0iIzAwNzFCQyIvPgo8Y2lyY2xlIGN4PSIxODAiIGN5PSIzNDAiIHI9IjMwIiBmaWxsPSIjMzMzIi8+CjxjaXJjbGUgY3g9IjQyMCIgY3k9IjM0MCIgcj0iMzAiIGZpbGw9IiMzMzMiLz4KPHJlY3QgeD0iMTIwIiB5PSIyNDAiIHdpZHRoPSIzNjAiIGhlaWdodD0iNDAiIHJ4PSI4IiBmaWxsPSIjRDFEMUQxIi8+CjxyZWN0IHg9IjE2MCIgeT0iMjAwIiB3aWR0aD0iMjgwIiBoZWlnaHQ9IjQwIiByeD0iOCIgZmlsbD0iI0QxRDFEMSIvPgo8dGV4dCB4PSIzMDAiIHk9IjE4MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMzMzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NYXJ1dGkgU3V6dWtpPC90ZXh0Pgo8L3N2Zz4K" alt="Maruti Suzuki Cars">
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="container">
+            <div class="quick-grid">
+                <a href="tel:+913532505000" class="quick-item">
+                    <i class="fas fa-phone"></i>
+                    <span>Call Now</span>
+                </a>
+                <a href="https://wa.me/919434505000" class="quick-item" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="#" class="quick-item" onclick="openEMICalculator()">
+                    <i class="fas fa-calculator"></i>
+                    <span>EMI Calculator</span>
+                </a>
+                <a href="#location" class="quick-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Directions</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cars -->
+    <section id="cars" class="featured-cars">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Popular Cars</h2>
+                <p class="section-subtitle">Discover our range of Maruti Suzuki vehicles designed for every need</p>
+            </div>
+            <div class="cars-grid">
+                <div class="car-card">
+                    <div class="car-badge">Arena</div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDM1MCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzNTAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjlGQUZCIi8+CjxwYXRoIGQ9Ik01MCAzNDBDNTAgMzIwIDcwIDMwMCA5MCAzMDBIMjYwQzI4MCAzMDAgMzAwIDMyMCAzMDAgMzQwVjE4MEgyNDBMMjIwIDIwMEgxMzBMMTEwIDE4MEg1MFYzNDBaIiBmaWxsPSIjMDA3MUJDII8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjE4MCIgcj0iMjAiIGZpbGw9IiMzMzMiLz4KPGNpcmNsZSBjeD0iMjUwIiBjeT0iMTgwIiByPSIyMCIgZmlsbD0iIzMzMyIvPgo8cmVjdCB4PSI3MCIgeT0iMTIwIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjIwIiByeD0iNCIgZmlsbD0iI0QxRDFEMSIvPgo8dGV4dCB4PSIxNzUiIHk9IjkwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMzMzMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPldBR09OIFI8L3RleHQ+Cjwvc3ZnPgo=" alt="Wagon R" class="car-image">
+                    <div class="car-info">
+                        <h3 class="car-name">Wagon R</h3>
+                        <p class="car-price">Starting ₹5.54 Lakh</p>
+                        <ul class="car-features">
+                            <li>21.79 kmpl Mileage</li>
+                            <li>5 Seater</li>
+                            <li>Smart Hybrid</li>
+                        </ul>
+                        <div class="car-actions">
+                            <button class="btn-outline" onclick="openTestDriveModal('Wagon R')">Test Drive</button>
+                            <button class="btn-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-badge">Nexa</div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDM1MCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzNTAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjlGQUZCIi8+CjxwYXRoIGQ9Ik00MCAzNDBDNDAgMzIwIDYwIDMwMCA4MCAzMDBIMjcwQzI5MCAzMDAgMzEwIDMyMCAzMTAgMzQwVjE4MEgyNTBMMjMwIDIwMEgxMjBMMTAwIDE4MEg0MFYzNDBaIiBmaWxsPSIjMDA3MUJDIE8+CjxjaXJjbGUgY3g9IjkwIiBjeT0iMTgwIiByPSIyMCIgZmlsbD0iIzMzMyIvPgo8Y2lyY2xlIGN4PSIyNjAiIGN5PSIxODAiIHI9IjIwIiBmaWxsPSIjMzMzIi8+CjxyZWN0IHg9IjYwIiB5PSIxMjAiIHdpZHRoPSIyMzAiIGhlaWdodD0iMjAiIHJ4PSI0IiBmaWxsPSIjRDFEMUQxIi8+Cjx0ZXh0IHg9IjE3NSIgeT0iOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QkFMRU5PPC90ZXh0Pgo8L3N2Zz4K" alt="Baleno" class="car-image">
+                    <div class="car-info">
+                        <h3 class="car-name">Baleno</h3>
+                        <p class="car-price">Starting ₹6.61 Lakh</p>
+                        <ul class="car-features">
+                            <li>22.35 kmpl Mileage</li>
+                            <li>5 Seater</li>
+                            <li>Premium Interior</li>
+                        </ul>
+                        <div class="car-actions">
+                            <button class="btn-outline" onclick="openTestDriveModal('Baleno')">Test Drive</button>
+                            <button class="btn-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-badge">Arena</div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDM1MCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzNTAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjlGQUZCIi8+CjxwYXRoIGQ9Ik01MCAzNDBDNTAgMzIwIDcwIDMwMCA5MCAzMDBIMjYwQzI4MCAzMDAgMzAwIDMyMCAzMDAgMzQwVjE4MEgyNDBMMjIwIDIwMEgxMzBMMTEwIDE4MEg1MFYzNDBaIiBmaWxsPSIjMDA3MUJDIE8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjE4MCIgcj0iMjAiIGZpbGw9IiMzMzMiLz4KPGNpcmNsZSBjeD0iMjUwIiBjeT0iMTgwIiByPSIyMCIgZmlsbD0iIzMzMyIvPgo8cmVjdCB4PSI3MCIgeT0iMTIwIiB3aWR0aD0iMjEwIiBoZWlnaHQ9IjIwIiByeD0iNCIgZmlsbD0iI0QxRDFEMSIvPgo8dGV4dCB4PSIxNzUiIHk9IjkwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMzMzMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkRaSVJFPC90ZXh0Pgo8L3N2Zz4K" alt="Dzire" class="car-image">
+                    <div class="car-info">
+                        <h3 class="car-name">Dzire</h3>
+                        <p class="car-price">Starting ₹6.57 Lakh</p>
+                        <ul class="car-features">
+                            <li>24.12 kmpl Mileage</li>
+                            <li>5 Seater Sedan</li>
+                            <li>CNG Available</li>
+                        </ul>
+                        <div class="car-actions">
+                            <button class="btn-outline" onclick="openTestDriveModal('Dzire')">Test Drive</button>
+                            <button class="btn-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-badge">Commercial</div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDM1MCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzNTAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjlGQUZCIi8+CjxwYXRoIGQ9Ik00MCAzNDBDNDAgMzIwIDYwIDMwMCA4MCAzMDBIMjcwQzI5MCAzMDAgMzEwIDMyMCAzMTAgMzQwVjE4MEgxMDBWMzQwWiIgZmlsbD0iIzAwNzFCQyIvPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjE4MCIgcj0iMjAiIGZpbGw9IiMzMzMiLz4KPGNpcmNsZSBjeD0iMjYwIiBjeT0iMTgwIiByPSIyMCIgZmlsbD0iIzMzMyIvPgo8cmVjdCB4PSI2MCIgeT0iODAiIHdpZHRoPSIyMzAiIGhlaWdodD0iNDAiIHJ4PSI0IiBmaWxsPSIjRDFEMUQxIi8+Cjx0ZXh0IHg9IjE3NSIgeT0iNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U1VQRVI+RSBDQVJSWU88L3RleHQ+Cjwvc3ZnPgo=" alt="Super Carry" class="car-image">
+                    <div class="car-info">
+                        <h3 class="car-name">Super Carry</h3>
+                        <p class="car-price">Starting ₹5.42 Lakh</p>
+                        <ul class="car-features">
+                            <li>21 kmpl Mileage</li>
+                            <li>740 kg Payload</li>
+                            <li>CNG Option</li>
+                        </ul>
+                        <div class="car-actions">
+                            <button class="btn-outline" onclick="openTestDriveModal('Super Carry')">Test Drive</button>
+                            <button class="btn-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-secondary">View All Cars</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Sevoke Motors?</h2>
+                <p class="section-subtitle">Experience the difference with Siliguri's most trusted Maruti Suzuki dealer</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="feature-title">15+ Years of Excellence</h3>
+                    <p class="feature-description">Serving Siliguri with unmatched automotive expertise since 2008. Your trusted partner in mobility.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="feature-title">Certified Service Center</h3>
+                    <p class="feature-description">State-of-the-art service facility with genuine Maruti parts and expert technicians.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="feature-title">Customer First Approach</h3>
+                    <p class="feature-description">Dedicated relationship managers ensuring personalized service and support throughout your journey.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h3 class="feature-title">Best Finance Options</h3>
+                    <p class="feature-description">Competitive loan rates, easy EMIs, and quick approvals with leading banks and NBFCs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="feature-title">Extensive Inventory</h3>
+                    <p class="feature-description">Complete range of Arena, Nexa, Commercial, and True Value pre-owned vehicles.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Genuine Parts & Warranty</h3>
+                    <p class="feature-description">100% genuine Maruti Suzuki parts with comprehensive warranty coverage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Complete automotive solutions under one roof</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>New Car Sales</h3>
+                    <p>Arena & Nexa showrooms with complete range of passenger and commercial vehicles.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Service & Repairs</h3>
+                    <p>Expert maintenance, repairs, and genuine parts with advanced diagnostic equipment.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>True Value Pre-Owned</h3>
+                    <p>Certified pre-owned cars with quality assurance and attractive exchange offers.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Finance Solutions</h3>
+                    <p>Easy car loans, insurance, and flexible EMI options from trusted financial partners.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real experiences from satisfied Sevoke Motors customers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Excellent service and genuine care for customers. Bought my Swift from Sevoke Motors - hassle-free experience and great after-sales support."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <span>Swift Owner, Siliguri</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Best dealership in North Bengal! Professional staff, transparent pricing, and quick loan approval. Highly recommend for Maruti cars."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <span>Baleno Owner, Jalpaiguri</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Outstanding service experience! Regular maintenance is always on time and the team explains everything clearly. Trust Sevoke Motors completely."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Amit Das</h4>
+                            <span>Dzire Owner, Darjeeling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Visit Our Showroom</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Sevoke Road, Siliguri, West Bengal 734001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 353 250 5000</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon-Sat: 9:00 AM - 7:00 PM<br>Sunday: 10:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@sevokemotors.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <form class="form" onsubmit="handleContactForm(event)">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Interest</option>
+                                <option value="new-car">New Car Purchase</option>
+                                <option value="service">Service Booking</option>
+                                <option value="finance">Finance Enquiry</option>
+                                <option value="preowned">Pre-Owned Cars</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTIwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNOCAyMEM4IDEyIDEyIDggMjAgOGg4MEM5MiA4IDk2IDEyIDk2IDIwUzkyIDMyIDg0IDMySDIwQzEyIDMyIDggMjggOCAyMFoiIGZpbGw9IiMwMDcxQkMiLz4KPHR5cGUgdGV4dD0iU2V2b2tlIE1vdG9ycyIgZmlsbD0iI0ZGRiIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiBkeD0iMjAiIGR5PSIyNSIvPgo8L3N2Zz4K" alt="Sevoke Motors">
+                        <span>Sevoke Motors</span>
+                    </div>
+                    <p class="footer-description">Siliguri's trusted Maruti Suzuki dealership since 2008. Your journey begins here with Arena, Nexa, Commercial, and True Value cars.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>New Cars</h4>
+                    <ul>
+                        <li><a href="#">Arena Cars</a></li>
+                        <li><a href="#">Nexa Cars</a></li>
+                        <li><a href="#">Commercial Vehicles</a></li>
+                        <li><a href="#">Compare Cars</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Book Service</a></li>
+                        <li><a href="#">Genuine Parts</a></li>
+                        <li><a href="#">True Value</a></li>
+                        <li><a href="#">Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">EMI Calculator</a></li>
+                        <li><a href="#">Finance Options</a></li>
+                        <li><a href="#">Test Drive</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sevoke Motors. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Test Drive Modal -->
+    <div id="testDriveModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Book Your Test Drive</h2>
+                <span class="close" onclick="closeModal('testDriveModal')">&times;</span>
+            </div>
+            <form class="modal-form" onsubmit="handleTestDriveForm(event)">
+                <div class="form-group">
+                    <label>Select Car Model</label>
+                    <select id="carModel" required>
+                        <option value="">Choose a car</option>
+                        <option value="Alto K10">Alto K10</option>
+                        <option value="Wagon R">Wagon R</option>
+                        <option value="Swift">Swift</option>
+                        <option value="Dzire">Dzire</option>
+                        <option value="Baleno">Baleno</option>
+                        <option value="Grand Vitara">Grand Vitara</option>
+                        <option value="Brezza">Brezza</option>
+                        <option value="Ciaz">Ciaz</option>
+                        <option value="XL6">XL6</option>
+                        <option value="Super Carry">Super Carry</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Date</label>
+                        <input type="date" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Time</label>
+                    <select required>
+                        <option value="">Select time</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="2:00 PM">2:00 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="4:00 PM">4:00 PM</option>
+                        <option value="5:00 PM">5:00 PM</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary btn-full">Book Test Drive</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- EMI Calculator Modal -->
+    <div id="emiModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>EMI Calculator</h2>
+                <span class="close" onclick="closeModal('emiModal')">&times;</span>
+            </div>
+            <div class="emi-calculator">
+                <div class="calculator-inputs">
+                    <div class="form-group">
+                        <label>Loan Amount (₹)</label>
+                        <input type="number" id="loanAmount" value="500000" min="100000" max="5000000" oninput="calculateEMI()">
+                        <div class="slider-container">
+                            <input type="range" id="loanSlider" min="100000" max="2000000" value="500000" oninput="updateLoanAmount()">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Interest Rate (%)</label>
+                        <input type="number" id="interestRate" value="8.5" min="7" max="15" step="0.1" oninput="calculateEMI()">
+                        <div class="slider-container">
+                            <input type="range" id="rateSlider" min="7" max="15" value="8.5" step="0.1" oninput="updateInterestRate()">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Loan Tenure (Years)</label>
+                        <input type="number" id="loanTenure" value="5" min="1" max="7" oninput="calculateEMI()">
+                        <div class="slider-container">
+                            <input type="range" id="tenureSlider" min="1" max="7" value="5" oninput="updateTenure()">
+                        </div>
+                    </div>
+                </div>
+                <div class="emi-result">
+                    <div class="result-card">
+                        <h3>Monthly EMI</h3>
+                        <div class="emi-amount" id="emiAmount">₹10,387</div>
+                    </div>
+                    <div class="result-breakdown">
+                        <div class="breakdown-item">
+                            <span>Principal Amount</span>
+                            <span id="principalAmount">₹5,00,000</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Total Interest</span>
+                            <span id="totalInterest">₹1,23,220</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Total Amount</span>
+                            <span id="totalAmount">₹6,23,220</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
